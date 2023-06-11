@@ -8,7 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
-const Late_Leave = () => {
+const LateLeave = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const columns = [
@@ -180,4 +180,4 @@ const Late_Leave = () => {
   );
 };
 
-export default Late_Leave;
+export default LateLeave;

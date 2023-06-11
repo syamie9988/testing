@@ -12,7 +12,6 @@ const Topbar = () => {
 
   return (
     <Box display="flex" justifyContent="flex-end" p={2}>
-
       {/* ICONS */}
       <Box display="flex">
       <IconButton component={Link} to="/" style={{ fontSize: "inherit" }}>

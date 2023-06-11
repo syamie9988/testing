@@ -8,7 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
-const Rest_Day = () => {
+const RestDay = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const columns = [
@@ -186,4 +186,4 @@ const Rest_Day = () => {
   );
 };
 
-export default Rest_Day;
+export default RestDay;

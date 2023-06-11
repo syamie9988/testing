@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
-function Forgot_Password() {
+function ForgotPassword() {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const navigate = useNavigate();
@@ -43,4 +43,4 @@ function Forgot_Password() {
   );
 }
 
-export default Forgot_Password;
+export default ForgotPassword;

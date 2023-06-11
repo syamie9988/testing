@@ -8,7 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
-const Public_Lateness = () => {
+const PublicLateness = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const columns = [
@@ -167,4 +167,4 @@ const Public_Lateness = () => {
   );
 };
 
-export default Public_Lateness;
+export default PublicLateness;

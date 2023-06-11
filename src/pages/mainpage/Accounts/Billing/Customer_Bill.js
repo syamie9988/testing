@@ -8,7 +8,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { Link } from "react-router-dom";
 
-const Customer_Bill = () => {
+const CustomerBill = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [data, setData] = useState(mockDataBilling);
@@ -139,4 +139,4 @@ const Customer_Bill = () => {
   );
 };
 
-export default Customer_Bill;
+export default CustomerBill;

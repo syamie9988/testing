@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { ColorModeContext, useMode } from '../../components/theme';
 
+
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -52,7 +53,7 @@ const Login = () => {
             </div>
             <div className="form-group">
               <button type="submit">Login</button>
-              <Link to="/Forgot_Password" className="forgot-password-link">Forgot Password?</Link>
+              <Link to="/ForgotPassword" className="forgot-password-link">Forgot Password?</Link>
             </div>
           </form>
         </div>
