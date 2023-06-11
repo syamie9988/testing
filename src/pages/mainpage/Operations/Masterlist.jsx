@@ -1,11 +1,15 @@
-import { Box, useTheme, Breadcrumbs, Link, TextField } from "@mui/material";
+import { Box, useTheme,  TextField } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../../components/theme";
 import { mockDataAttendance } from "../../../data/mockData";
 import IconButton from "@mui/material/IconButton";
 import EditIcon from "@mui/icons-material/Edit";
+import Topbar from "../../../components/Topbar";
+import Sidebar from "../../../components/Sidebar";
 
 const Masterlist = () => {
+
+  
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const columns = [
@@ -188,9 +192,22 @@ const Masterlist = () => {
     },
   ];
 
-  return (
-    <Box m="9px">
+  
 
+  return (
+
+    <div className="app">
+          
+    <Sidebar  />
+      <main className="content">
+      <Topbar  />
+
+    <Box m="9px">
+{/* sidebar top bar */}
+
+
+
+      
       <Box display="flex" alignItems="center">
 
         <TextField
@@ -201,6 +218,9 @@ const Masterlist = () => {
           sx={{ ml: "auto", width: 300 }}
         />
       </Box>
+
+      
+
       <Box
         m="40px 0 0 0"
         height="70vh"
@@ -229,10 +249,17 @@ const Masterlist = () => {
             color: `${colors.greenAccent[200]} !important`,
           },
         }}
+        
       >
+        
         <DataGrid rows={mockDataAttendance} columns={columns} />
+        
       </Box>
+     
     </Box>
+
+    </main>
+          </div>
   );
 };
 
